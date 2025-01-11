@@ -15,28 +15,28 @@ const Heading = () => {
 
   const position = [51.505, -0.09];
   return (
-    <section className="w-full relative m-auto">
-      <div className=" items-center text-center pt-10 h-[400px]">
-        <h1 className="font-playfair text-8xl text-light ">Book A Table</h1>
-        <p className="text-desaturatedBlueGray font-dmSans text-lg w-[50%] mx-auto">
+    <section className="w-[90%] mx-auto lg:w-full relative m-auto">
+      <div className=" items-center text-center pt-10  gap-2 flex flex-col h-[600px] lg:h-[400px]">
+        <h1 className="font-playfair text-4xl lg:text-8xl text-light ">Book A Table</h1>
+        <p className="text-desaturatedBlueGray font-dmSans text-lg w-[90%] lg:w-[50%] mx-auto">
           We consider all the drivers of change gives you the components you
           need to change to create a truly happens.
         </p>
       </div>
-      <div className="bg-white z-50 w-[812px] absolute left-[17%] top-[240px] mx-auto rounded-[10px] border shadow-lg">
+      <div className="bg-white z-50 w-[90%]  lg:w-[812px] absolute left-[5%] lg:left-[17%] top-[240px] mx-auto rounded-[10px] border shadow-lg">
         <form className="p-6 flex flex-col">
-          <div className="flex  justify-between gap-4">
+          <div className="flex lg:flex-row flex-col  justify-between gap-4">
             <div className="flex flex-col text-left gap-2">
               <p className="font-dmSans font-bold text-base">Date</p>
               <input
                 type="date"
-                className="w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
+                className="w-full lg:w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
               />
             </div>
             <div className="flex flex-col text-left gap-2">
               <p className="font-dmSans font-bold text-base">Time</p>
               {/* <input type="time"   className="w-[350px] h-[60px] px-4 border border-pileGrey rounded-full" /> */}
-              <div className="w-[350px] h-[60px] px-4  border border-pileGrey rounded-full flex justify-center items-center">
+              <div className="w-full lg:w-[350px] h-[60px] px-4  border border-pileGrey rounded-full flex justify-center items-center">
                 <select
                   name=""
                   id=""
@@ -97,19 +97,19 @@ const Heading = () => {
             </div>
           </div>
 
-          <div className="flex  justify-between gap-4">
+          <div className="flex  lg:flex-row flex-col  justify-between gap-4">
             <div className="flex flex-col text-left gap-2">
               <p className="font-dmSans font-bold text-base">Name</p>
               <input
                 type="text"
-                className="w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
+                className="w-full lg:w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
               />
             </div>
             <div className="flex flex-col text-left gap-2">
               <p className="font-dmSans font-bold text-base">Phone</p>
               <input
                 type="telephone"
-                className="w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
+                className="w-full lg:w-[350px] h-[60px] px-4 border border-pileGrey rounded-full"
               />
             </div>
           </div>
@@ -145,7 +145,7 @@ const Heading = () => {
             </div>
           </div>
 
-          <button className="bg-primary text-white rounded-full my-8 p-4 ">
+          <button className="bg-primary text-white rounded-full my-8 p-4 transition-transform duration-300 hover:scale-110 ">
             Book A Table
           </button>
         </form>
