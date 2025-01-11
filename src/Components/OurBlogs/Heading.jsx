@@ -35,11 +35,11 @@ const Heading = () => {
   ];
 
   return (
-    <section className="w-[90%] m-auto pb-20">
+    <section className="w-[90%] mx-auto py-10">
       <div className="items-center text-center pt-10">
         <div>
-          <h1 className="font-playfair text-8xl text-light">Our Blog & Articles</h1>
-          <p className="text-desaturatedBlueGray font-dmSans text-lg w-[50%] mx-auto pt-8">
+          <h1 className="font-playfair text-4xl lg:text-8xl text-light">Our Blog & Articles</h1>
+          <p className="text-desaturatedBlueGray font-dmSans text-base lg:text-lg lg:w-[50%] mx-auto pt-8">
             We consider all the drivers of change gives you the components you
             need to change to create a truly happens.
           </p>

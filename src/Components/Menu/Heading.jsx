@@ -61,7 +61,7 @@ const Heading = () => {
   ];
 
   const [filteredItems, setFilteredItems] = useState(menuData);
-  const [filters, setFilters] = useState('All');
+  const [filters, setFilters] = useState("All");
 
   const handleFilter = (category) => {
     if (category === "All") {
@@ -72,77 +72,55 @@ const Heading = () => {
   };
 
   return (
-    <section className="w-[90%] m-auto pb-20">
-      <div className="items-center text-center pt-10">
+    <section className="w-[90%] mx-auto py-10 px-4">
+      <div className="items-center text-center">
         <div>
-          <h1 className="font-playfair text-8xl text-light ">Our Menu</h1>
-          <p className="text-desaturatedBlueGray font-dmSans text-lg">
+          <h1 className="font-playfair text-3xl text-light md:text-4xl lg:text-5xl">
+            Our Menu
+          </h1>
+          <p className="text-desaturatedBlueGray lg:w-[50%] mx-auto text-sm md:text-base lg:text-lg mt-4">
             We consider all the drivers of change gives you the components you
             need to change to create a truly happens.
           </p>
         </div>
 
-        <div className="pt-10 flex gap-10 justify-center">
-          <button
-            className={`${filters === 'All' ? 'bg-primary text-white' :''} rounded-full border border-lightDesaturatedGreen text-light font-bold text-base px-6 py-2`}
-            onClick={() => {
-              setFilters('All')
-              handleFilter("All")}}
-          >
-            All
-          </button>
-          <button
-            className={`${filters === 'Desserts' ? 'bg-primary text-white' :''} rounded-full border border-lightDesaturatedGreen text-light font-bold text-base px-6 py-2`}
-            onClick={() => {
-              setFilters('Desserts')
-              handleFilter("Desserts")}}
-          >
-            Desserts
-          </button>
-          <button
-            className={`${filters === 'Drinks' ? 'bg-primary text-white' :''} rounded-full border border-lightDesaturatedGreen text-light font-bold text-base px-6 py-2`}
-            onClick={() => {
-              setFilters("Drinks")
-              handleFilter("Drinks")}}
-          >
-            Drinks
-          </button>
-          <button
-            className={`${filters === 'Main Dishes'? 'bg-primary text-white':''} rounded-full border border-lightDesaturatedGreen text-light font-bold text-base px-6 py-2`}
-            onClick={() => {
-              setFilters("Main Dishes")
-              handleFilter("Main Dishes")}}
-          >
-            Main Dishes
-          </button>
-          <button
-            className={` ${ filters === "Breakfast" ? 'bg-primary text-white' : ''} rounded-full border border-lightDesaturatedGreen text-light font-bold text-base px-6 py-2`}
-            onClick={() => {
-              setFilters ("Breakfast")
-              handleFilter("Breakfast")}}
-          >
-            Breakfast
-          </button>
+        <div className="pt-6 flex flex-wrap gap-2 md:gap-4 justify-center">
+          {["All", "Desserts", "Drinks", "Main Dishes", "Breakfast"].map(
+            (category) => (
+              <button
+                key={category}
+                className={`${
+                  filters === category ? "bg-primary text-white" : ""
+                } rounded-full border border-lightDesaturatedGreen text-light text-sm md:text-base font-medium px-4 py-2`}
+                onClick={() => {
+                  setFilters(category);
+                  handleFilter(category);
+                }}
+              >
+                {category}
+              </button>
+            )
+          )}
         </div>
 
-        <div className=" pt-10 md:pt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="pt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center justify-center text-center bg-white border border-lightDesaturatedGreen shadow-sm rounded-lg"
+              className="flex flex-col items-center justify-center text-center bg-white border border-lightDesaturatedGreen shadow-sm rounded-lg p-4"
             >
-              <div>
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <h3 className="text-2xl font-bold text-primary p-2">
+              <img
+                src={item.image}
+                alt={item.name}
+                className="w-full h-40 object-cover rounded-md"
+              />
+              <h3 className="text-lg md:text-xl font-bold text-primary mt-4">
                 {item.price}
               </h3>
-              <h3 className="text-2xl font-bold text-light ">{item.name}</h3>
-              <p className="text-lightGrey text-base p-2">
+              <h3 className="text-md md:text-lg font-bold text-light mt-2">
+                {item.name}
+              </h3>
+              <p className="text-sm md:text-base text-lightGrey mt-2">
                 Made with eggs, lettuce, salt, oil and other ingredients.
               </p>
             </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-darkGray  py-10">
+    <footer className="bg-darkGray py-10  ">
       <div className="w-[90%] m-auto flex flex-wrap justify-between gap-10">
         <div className="w-full sm:w-[22%] mb-10 sm:mb-0">
           <div className="flex items-center mb-4">
@@ -49,10 +49,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="w-full sm:w-[22%]">
+        <div className="w-full sm:w-[22%] lg:flex hidden lg:flex-col">
           <h2 className="text-white font-semibold text-lg mb-4">Follow Us On Instagram</h2>
-          <div className="grid grid-cols-2 gap-4">
-            <img src="p-1.svg" alt="Instagram Image 1" className="w-full h-auto rounded" />
+          <div className="grid  grid-cols-2 gap-4">
+            <img src="p-1.svg" alt="Instagram Image 1"  className=" w-full h-auto rounded" />
             <img src="p-2.svg" alt="Instagram Image 2" className="w-full h-auto rounded" />
             <img src="p-3.svg" alt="Instagram Image 3" className="w-full h-auto rounded" />
             <img src="p-4.svg" alt="Instagram Image 4" className="w-full h-auto rounded" />

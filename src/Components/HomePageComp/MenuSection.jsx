@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 
 const MenuCards = () => {
   return (
-    <section className="w-[90%] m-auto h-screen pt-24">
-      <div className="container mx-auto">
-      <div className="text-5xl font-playfair text-center">
+    <section className="w-[90%] mx-auto py-24">
+      <div className="">
+      <div className="text-[26px] font-bold lg:font-light lg:text-5xl font-playfair text-center">
             <h1>Browse Our Menu</h1>
+            
           </div>
         <div className=" p-6 grid grid-cols-1 md:grid-cols-4 gap-6">
           

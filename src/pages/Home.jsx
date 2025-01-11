@@ -17,8 +17,9 @@ const Home = () => {
       <MenuCards />
       <MoreAbout />
       <Services />
-      <CustomersSays/>
       <Delivery />
+      <CustomersSays/>
+
       <Blog />
       <Footer />
     </>

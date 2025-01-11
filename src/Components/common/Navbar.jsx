@@ -9,12 +9,12 @@ const Navbar = () => {
   return (
     <div style={{backgroundColor:location.pathname==="/Contact"?"#F9F9F7":""}}>
       <nav className="w-[90%] m-auto">
-        <div className="container mx-auto">
+        <div className="">
           <div className="flex justify-between items-center py-4">
             {/* Logo Section */}
             <div className="flex items-center">
-              <img src="/japanese-food.svg" alt="Logo" className="w-10" />
-              <h1 className="font-playfair text-4xl italic font-semibold text-darkGray">
+              <img src="/japanese-food.svg" alt="Logo" className="w-10 " />
+              <h1 className="font-playfair text-4xl italic font-semibold text-darkGray cursor-pointer">
                 Bistro Bliss
               </h1>
             </div>
@@ -55,7 +55,7 @@ const Navbar = () => {
               >
                 {/* Hamburger Icon */}
                 {isMenuOpen ? (
-                  <span className="text-xl">✖</span>
+                  <span className="text-xl font-bold !text-black">X</span>
                 ) : (
                   <span className="text-xl">☰</span>
                 )}
@@ -65,25 +65,25 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="flex flex-col items-center gap-4 mt-4 md:hidden">
+            <div className="flex flex-col items-center py-6 gap-4 mt-4 md:hidden">
               <div className="text-light hover:text-primary cursor-pointer">
-                Home
+              <Link to={"/"}>Home </Link>
               </div>
               <div className="text-light hover:text-primary cursor-pointer">
-                About
+              <Link to={"/about"}>  About</Link>
               </div>
               <div className="text-light hover:text-primary cursor-pointer">
-                Menu
+              <Link to={"/menu"}>   Menu</Link>
               </div>
               <div className="text-light hover:text-primary cursor-pointer">
-                Pages
+              <Link to={"/OurBlogs"}>   Pages</Link>
               </div>
               <div className="text-light hover:text-primary cursor-pointer">
-                Contact
+              <Link to={"/Contact"}> Contact</Link>
               </div>
               {/* Book A Table Button for Mobile */}
               <button className="px-6 py-3 border border-black text-black font-dmSans font-bold rounded-full hover:bg-gray-100">
-                Book A Table
+               <Link to={"/booktable"}> Book A Table</Link>
               </button>
             </div>
           )}

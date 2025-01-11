@@ -2,13 +2,13 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <section className=" bg-greyColor pb-20">
+    <section className=" bg-greyColor py-20">
       <div className="w-[90%] m-auto">
       <div className="flex justify-between items-center mb-10">
         <h2 className="text-4xl font-playfair text-gray-800">
           Our Blog & Articles
         </h2>
-        <button className="px-5 py-2 bg-primary text-white font-medium rounded-full hover:bg-red-700">
+        <button className="min-w-[150px] px-5 py-2 bg-primary text-white font-medium rounded-full hover:bg-red-700">
           Read All Articles
         </button>
       </div>

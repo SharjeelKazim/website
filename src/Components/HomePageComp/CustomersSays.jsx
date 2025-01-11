@@ -26,8 +26,8 @@ const CustomersSays = () => {
   ];
 
   return (
-    <section className="w-[90%] m-auto p-20">
-      <div className="container mx-auto">
+    <section className="w-[90%] mx-auto py-20">
+      <div className="">
         <div className="text-5xl font-playfair text-center">
           <h1>What Our Customers Say</h1>
         </div>

@@ -2,17 +2,17 @@ import React from "react";
 
 const Provide = () => {
   return (
-    <section className=" h-[100vh] flex items-center pt-10 ">
-      <div className="w-[90%] mx-auto flex flex-column flex-row">
-        <div className="sm:w-[50%] ">
-          <img src="/provide.svg" alt="" />
+    <section className=" h-[100vh] flex items-center py-10 ">
+      <div className="w-[90%] mx-auto flex flex-col lg:flex-row">
+        <div className="  ">
+          <img src="/provide.svg" alt=""/>
         </div>
-        <div className="sm:w-[50%] flex justify-center items-center ">
-          <div className="w-[90%] ">
-            <div className="text-[55px] font-playfair text-light">
+        <div className=" flex justify-center items-center lg:w-[50%]">
+          <div className=" w-[90%]">
+            <div className="text-[30px] lg:text-[55px] font-playfair text-light">
               We provide healthy food for your family.
             </div>
-            <div className="text-light  text-[18px] font-medium font-dmSans pt-4">
+            <div className="text-light text-[14px] lg:text-[18px] font-medium font-dmSans pt-4">
               Our story began with a vision to create a unique dining experience
               that merges fine dining, exceptional service, and a vibrant
               ambiance. Rooted in city's rich culinary culture, we aim to honor

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Says = () => {
+const CustomersSays = () => {
   const reviews = [
     {
       title: "“The best restaurant”",
@@ -12,22 +12,22 @@ const Says = () => {
     {
       title: "“An amazing experience”",
       description:
-        "We had a wonderful time at the place.Because we know about the man. The food was exquisite, and the service was exceptional. Highly recommend this spot for anyone!",
+        "We had a wonderful time at the place. The food was exquisite, and the service was exceptional. Highly recommend this spot for anyone!",
       image: "pic-2.svg",
       name: "Lisa Johnson",
     },
     {
       title: "“Unforgettable flavors”",
       description:
-        "The dishes served here were truly unforgettable memories of life. Each bite was bursting with flavor, and the ambiance made it even more enjoyable.",
+        "The dishes served here were truly unforgettable. Each bite was bursting with flavor, and the ambiance made it even more enjoyable.",
       image: "pic-3.svg",
       name: "Michael Brown",
     },
   ];
 
   return (
-    <section className="w-[90%] m-auto  p-20">
-      <div className="container mx-auto">
+    <section className="w-[90%] mx-auto py-20">
+      <div className="">
         <div className="text-5xl font-playfair text-center">
           <h1>What Our Customers Say</h1>
         </div>
@@ -61,4 +61,4 @@ const Says = () => {
   );
 };
 
-export default Says;
+export default CustomersSays;
