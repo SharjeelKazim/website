@@ -13,7 +13,7 @@ const About = () => {
 <Provide/>
 <Video/>
 <Info/>
-<Says/> 
+<Says/>
 <Footer/>
 
     </>
